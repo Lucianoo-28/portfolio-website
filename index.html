@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -6,212 +7,285 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="portfolio.css" />
 </head>
+
 <body>
-  <header class="hero" id="top">
-    <video class="hero-video" autoplay muted loop playsinline>
-      <!-- Optional background video -->
-      <!-- Replace background-video.mp4 with your own video file, or remove the video entirely if not using one -->
-      <source src="background-video.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
 
-    <div class="hero-overlay"></div>
+<header class="hero" id="top">
 
-    <nav class="navbar">
-      <div class="logo">Luciano<span class="accent">.dev</span></div>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-        ☰
-      </button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li>
-          <!-- Replace the URL below with your real LinkedIn profile link -->
-          <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
-            LinkedIn
-          </a>
-        </li>
-        <li>
-          <!-- Replace the URL below with your real GitHub profile link -->
-          <a href="https://github.com/yourgithub" target="_blank">
-            GitHub
-          </a>
-        </li>
-      </ul>
-    </nav>
+  <!-- Background video (optional) -->
 
-    <div class="hero-content">
-      <img
-        src="luciano-photo.png"
-        alt="Photo of Luciano Keqaj"
-        class="profile-photo"
-      />
-      <div class="hero-text">
-        <h1>Hi, I'm <span class="accent">Luciano Keqaj</span></h1>
-        <p class="hero-subtitle">
-          Software Developer | Problem Solver | Tech Enthusiast
-        </p>
-        <button id="themeToggle" class="btn primary-btn">
-          Toggle Light / Dark Mode
-        </button>
-      </div>
-    </div>
-  </header>
+  <video class="hero-video" autoplay muted loop playsinline>
+    <source src="background-video.mp4" type="video/mp4" />
+  </video>
 
-  <main>
-    <!-- ABOUT SECTION -->
-    <section id="about" class="section about-section">
-      <h2>About Me</h2>
-      <p>
-        I’m a software development student with a growing interest in web
-        technologies and full-stack programming. I enjoy learning new
-        languages, frameworks, and tools that help turn ideas into real
-        applications.
-      </p>
-      <p>
-        My goal is to continue improving my coding skills and gain experience in
-        professional software environments. I’m particularly interested in
-        developing efficient, user-focused solutions that make an impact.
-      </p>
-    </section>
+  <div class="hero-overlay"></div>
 
-    <!-- PROJECTS SECTION -->
-    <section id="projects" class="section projects-section">
-      <h2>Projects</h2>
+  <nav class="navbar">
+    <div class="logo">Luciano<span class="accent">.dev</span></div>
 
-      <div class="projects-grid">
-        <article class="project-card">
-          <img
-            src="project1-square.png"
-            alt="Screenshot of Task Manager App"
-            class="project-image"
-          />
-          <h3>Task Manager App</h3>
-          <p>
-            A JavaScript-based task manager that lets users add, edit, and
-            delete tasks. It uses local storage to save data and demonstrates
-            DOM manipulation, event handling, and clean interface design.
-          </p>
-          <a href="#" class="project-link" target="_blank">View Project</a>
-        </article>
+```
+<button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+  ☰
+</button>
 
-        <article class="project-card">
-          <img
-            src="project2-square.png"
-            alt="Screenshot of Weather Dashboard"
-            class="project-image"
-          />
-          <h3>Weather Dashboard</h3>
-          <p>
-            A web app that uses an external API to fetch real-time weather data
-            for any city. Built with HTML, CSS, and JavaScript, this project
-            strengthened my understanding of API integration.
-          </p>
-          <a href="#" class="project-link" target="_blank">View Project</a>
-        </article>
+<ul class="nav-links" id="navLinks">
+  <li><a href="#about">About</a></li>
+  <li><a href="#projects">Projects</a></li>
+  <li><a href="#skills">Skills</a></li>
+  <li><a href="#contact">Contact</a></li>
 
-        <article class="project-card">
-          <img
-            src="project3-square.png"
-            alt="Screenshot of Portfolio Website"
-            class="project-image"
-          />
-          <h3>Portfolio Website</h3>
-          <p>
-            A personal portfolio designed to showcase my skills, projects, and
-            contact information. It includes responsive design, a light/dark
-            theme toggle, and smooth navigation using JavaScript.
-          </p>
-          <a href="#" class="project-link" target="_blank">View Project</a>
-        </article>
-      </div>
-    </section>
+  <!-- FIXED LINKS -->
+  <li>
+    <a href="https://www.linkedin.com/" target="_blank">
+      LinkedIn
+    </a>
+  </li>
 
-    <!-- SKILLS SECTION -->
-    <section id="skills" class="section skills-section">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>JavaScript (ES6+)</li>
-        <li>HTML5 &amp; CSS3</li>
-        <li>Python (basic)</li>
-        <li>Node.js &amp; Express</li>
-        <li>Git &amp; GitHub</li>
-        <li>API Integration</li>
-        <li>Responsive Web Design</li>
-      </ul>
-    </section>
+  <li>
+    <a href="https://github.com/Lucianoo-28" target="_blank">
+      GitHub
+    </a>
+  </li>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="section contact-section">
-      <h2>Contact Me</h2>
-      <p>
-        I’m always open to new opportunities, collaborations, and feedback. Feel
-        free to reach out using the form below or through my email or profiles.
-      </p>
+</ul>
+```
 
-      <form id="contactForm" class="contact-form">
-        <div class="form-group">
-          <label for="name">Name*</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Your name"
-            required
-          />
-        </div>
+  </nav>
 
-        <div class="form-group">
-          <label for="email">Email*</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="you@example.com"
-            required
-          />
-        </div>
+  <div class="hero-content">
 
-        <div class="form-group">
-          <label for="message">Message*</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="4"
-            placeholder="Write your message here..."
-            required
-          ></textarea>
-        </div>
+```
+<img
+  src="luciano-photo.png"
+  alt="Photo of Luciano Keqaj"
+  class="profile-photo"
+/>
 
-        <button type="submit" class="btn primary-btn">
-          Send Message
-        </button>
-      </form>
+<div class="hero-text">
 
-      <div class="contact-links">
-        <a href="mailto:lucianokeqaj08@gmail.com">lucianokeqaj08@gmail.com</a>
-        <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
-          LinkedIn
-        </a>
-        <a href="https://github.com/yourgithub" target="_blank">
-          GitHub
-        </a>
-      </div>
-    </section>
-  </main>
+  <h1>Hi, I'm <span class="accent">Luciano Keqaj</span></h1>
 
-  <button id="backToTop" class="back-to-top" aria-label="Back to top">
-    ↑
+  <p class="hero-subtitle">
+    Software Development Student | Learning Web Development
+  </p>
+
+  <button id="themeToggle" class="btn primary-btn">
+    Toggle Light / Dark Mode
   </button>
 
-  <footer class="footer">
-    <p>
-      &copy; <span id="year"></span> Luciano Keqaj. All rights reserved.
-    </p>
-  </footer>
+</div>
+```
 
-  <script src="portfolio.js"></script>
+  </div>
+
+</header>
+
+<main>
+
+<!-- ABOUT SECTION -->
+
+<section id="about" class="section about-section">
+
+  <h2>About Me</h2>
+
+  <p>
+    Hello! My name is Luciano Keqaj and I am currently studying software
+    development. I enjoy learning how to build websites and applications
+    using HTML, CSS, and JavaScript.
+  </p>
+
+  <p>
+    This portfolio website was created as part of my HTML and CSS course.
+    It showcases some of the projects I have worked on and demonstrates
+    the skills I am developing as I continue my journey in programming.
+  </p>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects" class="section projects-section">
+
+  <h2>Projects</h2>
+
+  <div class="projects-grid">
+
+```
+<article class="project-card">
+
+  <img
+    src="project1-square.png"
+    alt="Task Manager Project"
+    class="project-image"
+  />
+
+  <h3>Task Manager App</h3>
+
+  <p>
+    A JavaScript task manager that allows users to add and remove tasks.
+    It demonstrates DOM manipulation and basic front-end logic.
+  </p>
+
+  <a href="#" class="project-link" target="_blank">
+    View Project
+  </a>
+
+</article>
+
+<article class="project-card">
+
+  <img
+    src="project2-square.png"
+    alt="Weather Dashboard Project"
+    class="project-image"
+  />
+
+  <h3>Weather Dashboard</h3>
+
+  <p>
+    A simple web application that retrieves weather data using an API
+    and displays it for the user.
+  </p>
+
+  <a href="#" class="project-link" target="_blank">
+    View Project
+  </a>
+
+</article>
+
+<article class="project-card">
+
+  <img
+    src="project3-square.png"
+    alt="Portfolio Website Project"
+    class="project-image"
+  />
+
+  <h3>Portfolio Website</h3>
+
+  <p>
+    This personal portfolio was created using HTML, CSS, and JavaScript
+    to showcase my projects and learning progress.
+  </p>
+
+  <a href="#" class="project-link" target="_blank">
+    View Project
+  </a>
+
+</article>
+```
+
+  </div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills" class="section skills-section">
+
+  <h2>Skills</h2>
+
+  <ul class="skills-list">
+    <li>HTML5</li>
+    <li>CSS3</li>
+    <li>JavaScript</li>
+    <li>Git & GitHub</li>
+    <li>API Integration</li>
+    <li>Responsive Web Design</li>
+  </ul>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="section contact-section">
+
+  <h2>Contact Me</h2>
+
+  <p>
+    If you would like to connect, collaborate, or learn more about my work,
+    feel free to reach out using the form below or through my email.
+  </p>
+
+  <form id="contactForm" class="contact-form">
+
+```
+<div class="form-group">
+  <label for="name">Name*</label>
+  <input
+    type="text"
+    id="name"
+    name="name"
+    placeholder="Your name"
+    required
+  />
+</div>
+
+<div class="form-group">
+  <label for="email">Email*</label>
+  <input
+    type="email"
+    id="email"
+    name="email"
+    placeholder="you@example.com"
+    required
+  />
+</div>
+
+<div class="form-group">
+  <label for="message">Message*</label>
+  <textarea
+    id="message"
+    name="message"
+    rows="4"
+    placeholder="Write your message here..."
+    required
+  ></textarea>
+</div>
+
+<button type="submit" class="btn primary-btn">
+  Send Message
+</button>
+```
+
+  </form>
+
+  <div class="contact-links">
+
+```
+<a href="mailto:lucianokeqaj08@gmail.com">
+  lucianokeqaj08@gmail.com
+</a>
+
+<a href="https://www.linkedin.com/" target="_blank">
+  LinkedIn
+</a>
+
+<a href="https://github.com/Lucianoo-28" target="_blank">
+  GitHub
+</a>
+```
+
+  </div>
+
+</section>
+
+</main>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+  ↑
+</button>
+
+<footer class="footer">
+
+  <p>
+    &copy; <span id="year"></span> Luciano Keqaj
+  </p>
+
+</footer>
+
+<script src="portfolio.js"></script>
+
 </body>
 </html>
+
