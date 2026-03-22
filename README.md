@@ -14,17 +14,17 @@ This repository contains projects I completed while learning C# and ASP.NET MVC.
 
 ### Car Insurance MVC App
 - Built a full ASP.NET MVC web application
-- Implemented quote calculation logic based on user input
-- Used Entity Framework for database integration
-- Created an Admin page to view all quotes
+- Implemented quote calculation logic
+- Used Entity Framework for database
+- Created Admin page
 
 ### Student Database (Code-First)
-- Created a console application using Entity Framework Code-First
-- Automatically generated a database
-- Added student data programmatically
+- Console app using Entity Framework
+- Automatically created database
+- Added student data
 
 ## Skills Gained
-- MVC architecture (Model, View, Controller)
-- Database creation using Entity Framework
-- Debugging and fixing runtime errors
-- Building full-stack web applications
+- MVC architecture
+- Entity Framework
+- Debugging
+- Full-stack basics
